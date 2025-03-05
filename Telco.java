@@ -11,10 +11,10 @@ public class Telco implements TelcoSubscription{
         this.unliCallText = unliCallText;
     }
 
-    @Override
-    public String accept(UsagePromo promo, double price){
-        return promo.showAllowance(telcoName, price);
-    }
+   @Override
+    public String accept(UsagePromo promo, double price) {
+        return telcoName + " offers " + dataAllowance + "GB data for ₱" + price;
+}
 
     @Override
     public String accept(UnliCallTextOffer unliPackage, boolean unliCallText){
